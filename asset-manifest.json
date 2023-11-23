@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/shilpi-portfolio/static/css/main.bf538fe7.css",
+    "main.js": "/shilpi-portfolio/static/js/main.e106fc5e.js",
+    "static/media/shilpi_pachauri.jpeg": "/shilpi-portfolio/static/media/shilpi_pachauri.8d8197295cac2da92db1.jpeg",
+    "index.html": "/shilpi-portfolio/index.html",
+    "main.bf538fe7.css.map": "/shilpi-portfolio/static/css/main.bf538fe7.css.map",
+    "main.e106fc5e.js.map": "/shilpi-portfolio/static/js/main.e106fc5e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf538fe7.css",
+    "static/js/main.e106fc5e.js"
+  ]
+}
