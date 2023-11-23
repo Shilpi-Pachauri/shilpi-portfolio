@@ -8,7 +8,6 @@ import {
   CardContainer,
   ToggleButtonGroup,
   ToggleButton,
-  Divider,
 } from "./ProjectsStyle";
 import ProjectCard from "../Cards/ProjectCards";
 import { projects } from "../../data/constants";
@@ -30,41 +29,25 @@ const Projects = ({ openModal, setOpenModal }) => {
               All
             </ToggleButton>
           )}
-
-          {/* <Divider />
-          {toggle === "android app" ? (
-            <ToggleButton
-              active
-              value="android app"
-              onClick={() => setToggle("android app")}
-            >
-              ANDROID APP'S
-            </ToggleButton>
-          ) : (
-            <ToggleButton
-              value="android app"
-              onClick={() => setToggle("android app")}
-            >
-              ANDROID APP'S
-            </ToggleButton>
-          )} */}
         </ToggleButtonGroup>
         <CardContainer>
           {toggle === "all" &&
-            projects.map((project) => (
+            projects.map((project, index) => (
               <ProjectCard
                 project={project}
                 openModal={openModal}
                 setOpenModal={setOpenModal}
+                key={index}
               />
             ))}
           {projects
-            .filter((item) => item.category == toggle)
-            .map((project) => (
+            .filter((item) => item.category === toggle)
+            .map((project, index) => (
               <ProjectCard
                 project={project}
                 openModal={openModal}
                 setOpenModal={setOpenModal}
+                key={index}
               />
             ))}
         </CardContainer>
